@@ -6,7 +6,7 @@ describe("App", () => {
   it("renders the 'Create party' heading", () => {
     render(<App />);
     expect(
-      screen.getByRole("heading", { name: "Create party" }),
+      screen.getByRole("heading", { name: "Add a New Party" }),
     ).toBeInTheDocument();
   });
 });

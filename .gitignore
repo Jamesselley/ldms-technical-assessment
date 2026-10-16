@@ -5,3 +5,6 @@ dist
 *.tsbuildinfo
 src/generated
 public/mockServiceWorker.js
+
+*storybook.log
+storybook-static

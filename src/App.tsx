@@ -1,7 +1,14 @@
+import SingleColumnLayout from './components/SingleColumnLayout';
+import CreatePartyForm from './modules/CreatePartyForm';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './theme/theme';
+
 export default function App() {
   return (
-    <main>
-      <h1>Create party</h1>
-    </main>
+    <ThemeProvider theme={theme}>
+      <SingleColumnLayout>
+        <CreatePartyForm />
+      </SingleColumnLayout>
+    </ThemeProvider>
   );
 }
